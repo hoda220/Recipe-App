@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --primaryColor: #595dae;
+    --subColor: #000
+}
+body {
+    font-family: system-ui;
+}
+main {
+    display: flex;
+    justify-content: flex-end;
+}
+.search-area {
+    position: fixed;
+    width: 40%;
+    background-color: var(--primaryColor);
+    height: 100vh;
+    left: 0;
+}
+.search-area > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.search-area > div  h2 {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 30px;
+}
+.search-input {
+    outline: none;
+    border: none;
+    width: 85%;
+    height: 40px;
+    padding: 5px;
+}
+#search-btn {
+    border: none;
+    cursor: pointer;
+}
+#search-btn i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    background-color: var(--subColor);
+    border: none;
+}
+.results-area {
+    width: 60%;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.results-area > div {
+    width: 45%;
+    /* height: fit-content; */
+    margin-bottom: 10px;
+}
+.card {
+    box-shadow: 0 4px 20px #ccc;
+    border-radius: 20px;
+    
+}
+.card-img img {
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.card-info {
+    padding: 20px 0;
+    text-align: center;
+}
+.card-info a {
+    display: inline-block;
+    width: 210px;
+    background-color: var(--primaryColor);
+    color: #fff;
+    border-radius: 25px;
+    padding: 15px 0;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 15px 0;
+}
+.card-info a:hover {
+    background-color: var(--subColor);
+}
+.recipe-details {
+    position: fixed;
+    width: 38%;
+    background-color: var(--primaryColor);
+    height: 100vh;
+    left: 0;
+    padding: 80px 30px ;
+}
+.showDetails {
+    display: none;
+}
+.recipe-details i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ccc;
+    color: var(--subColor);
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.recipe-details > * {
+    margin-bottom: 25px;
+    color: #fff;
+}
+.recipe-details h2 {
+    font-size: 35px;
+}
+.recipe-details p {
+    font-size: 25px;
+}
